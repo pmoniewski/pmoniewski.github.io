@@ -488,6 +488,12 @@ header h2 {
   border-top: solid 1px #fff;
 }
 
+div.content-sidebar {
+  float: right;
+  position: absolute;
+  left: 739px;
+}
+
 #main-content {
   float: left;
   width: 690px;
@@ -576,7 +582,6 @@ ul, ol, dl {
   margin-bottom: 20px;
 }
 
-
 /* COMMON STYLES */
 
 hr {
@@ -608,7 +613,6 @@ form {
 
 }
 
-
 /* GENERAL ELEMENT TYPE STYLES */
 
 #main-content h1 {
@@ -623,13 +627,14 @@ form {
 }
 
 #main-content h1:before {
-  padding-right: 0.3em;
+  /*padding-right: 0.3em;*/
   margin-left: -0.9em;
   color: #9ddcff;
   content: "/";
 }
 
 #main-content h2 {
+  margin-top: 32px;
   margin-bottom: 8px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 22px;
@@ -637,8 +642,9 @@ form {
   color: #474747;
   text-indent: 4px;
 }
+
 #main-content h2:before {
-  padding-right: 0.3em;
+  /*padding-right: 0.3em;*/
   margin-left: -1.5em;
   content: "//";
   color: #9ddcff;
@@ -655,7 +661,7 @@ form {
 }
 
 #main-content h3:before {
-  padding-right: 0.3em;
+  /*padding-right: 0.3em;*/
   margin-left: -2em;
   content: "///";
   color: #9ddcff;
@@ -671,7 +677,7 @@ form {
 }
 
 h4:before {
-  padding-right: 0.3em;
+  /*padding-right: 0.3em;*/
   margin-left: -2.8em;
   content: "////";
   color: #9ddcff;
@@ -684,8 +690,9 @@ h4:before {
   color: #474747;
   text-indent: 3px;
 }
+
 h5:before {
-  padding-right: 0.3em;
+  /*padding-right: 0.3em;*/
   margin-left: -3.2em;
   content: "/////";
   color: #9ddcff;
@@ -698,15 +705,16 @@ h5:before {
   color: #474747;
   text-indent: 3px;
 }
+
 h6:before {
-  padding-right: 0.3em;
+  /*padding-right: 0.3em;*/
   margin-left: -3.7em;
   content: "//////";
   color: #9ddcff;
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 a {
@@ -728,6 +736,7 @@ ul {
   list-style-position: inside;
   list-style: disc;
   padding-left: 20px;
+  margin: 0;
 }
 
 ol {
@@ -774,10 +783,10 @@ footer a:hover {
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) { }
+@media only screen and (max-width: 960px) { }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) and (max-width: 960px) {
   .inner {
     width: 740px;
   }
@@ -785,10 +794,13 @@ footer a:hover {
     width: 340px;
   }
   header h1 {
-    font-size: 60px;
+    font-size: 48px;
   }
   header h2 {
-    font-size: 30px;
+    font-size: 24px;
+  }
+  div.content-sidebar {
+    left: 539px;
   }
   #main-content {
     width: 490px;
@@ -806,7 +818,7 @@ footer a:hover {
 }
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .inner {
     width: 93%;
   }
@@ -846,6 +858,9 @@ footer a:hover {
     display: inline;
     font-size: 13px;
   }
+  div.content-sidebar {
+    display: none;
+  }
   #main-content,
   aside#sidebar {
     float: none;
@@ -874,8 +889,7 @@ footer a:hover {
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) { }
+@media only screen and (min-width: 480px) and (max-width: 768px) { }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) { }
-
+@media only screen and (max-width: 480px) { }
