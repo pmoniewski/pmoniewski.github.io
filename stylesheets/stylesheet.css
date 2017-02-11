@@ -622,7 +622,7 @@ form {
   font-size: 2.8em;
   font-weight: normal;
   color: #474747;
-  text-indent: 6px;
+  text-indent: 3px;
   letter-spacing: -1px;
 }
 
@@ -640,7 +640,7 @@ form {
   font-size: 22px;
   font-weight: bold;
   color: #474747;
-  text-indent: 4px;
+  text-indent: 3px;
 }
 
 #main-content h2:before {
@@ -782,16 +782,16 @@ footer a:hover {
 /* #Media Queries
 ================================================== */
 
-/* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 960px) { }
+/* Smaller than standard width (devices and browsers) */
+@media only screen and (max-width: 1024px) { }
 
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 960px) {
+/* Tablet Portrait size to standard width (devices and browsers) */
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
   .inner {
-    width: 740px;
+    width: 716px;
   }
   header h1, header h2 {
-    width: 340px;
+    width: 316px;
   }
   header h1 {
     font-size: 48px;
@@ -800,25 +800,15 @@ footer a:hover {
     font-size: 24px;
   }
   div.content-sidebar {
-    left: 539px;
+    left: 515px;
   }
   #main-content {
-    width: 490px;
-  }
-  #main-content h1:before,
-  #main-content h2:before,
-  #main-content h3:before,
-  #main-content h4:before,
-  #main-content h5:before,
-  #main-content h6:before {
-    padding-right: 0;
-    margin-left: 0;
-    content: none;
+    width: 466px;
   }
 }
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .inner {
     width: 93%;
   }
@@ -876,6 +866,14 @@ footer a:hover {
   aside#sidebar a.button {
     display: none;
   }
+  #main-content h1,
+  #main-content h2,
+  #main-content h3,
+  #main-content h4,
+  #main-content h5,
+  #main-content h6 {
+    text-indent: 0;
+}
   #main-content h1:before,
   #main-content h2:before,
   #main-content h3:before,
@@ -889,7 +887,7 @@ footer a:hover {
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 768px) { }
+@media only screen and (min-width: 480px) and (max-width: 800px) { }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 480px) { }
