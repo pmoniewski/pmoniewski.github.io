@@ -491,7 +491,8 @@ header h2 {
 div.content-sidebar {
   float: right;
   position: absolute;
-  left: 739px;
+  left: 740px;
+  margin-top: 5px;
 }
 
 #main-content {
@@ -532,16 +533,19 @@ a.button {
   line-height: 1.2;
   color: #fff;
 }
+
 a.button small {
   display: block;
   font-size: 11px;
 }
+
 header a.button {
   position: absolute;
   top: 0;
   right: 0;
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
+
 aside a.button {
   display: block;
   width: 138px;
@@ -571,6 +575,7 @@ pre {
   background: #fff;
   border: solid 1px #f2f2f2;
 }
+
 pre code {
   padding: 0;
   color: #2879d0;
@@ -733,15 +738,13 @@ blockquote {
 }
 
 ul {
-  list-style-position: inside;
-  list-style: disc;
+  list-style: disc inside;
   padding-left: 20px;
   margin: 0;
 }
 
 ol {
-  list-style-position: inside;
-  list-style: decimal;
+  list-style: decimal inside;
   padding-left: 3px;
 }
 
@@ -751,22 +754,22 @@ dl dd {
 }
 
 footer {
-  padding-top: 20px;
-  padding-bottom: 30px;
   margin-top: 40px;
-  font-size: 13px;
-  color: #aaa;
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 90%;
+  color: #CCCCCC;
+  background: rgba(51, 51, 51, 0.9);
 }
 
-footer a {
-  color: #666;
-}
+footer a,
 footer a:hover {
-  color: #444;
+  color: #CCCCCC;
 }
 
 /* MISC */
+
 .clearfix:after {
   display: block;
   height: 0;
