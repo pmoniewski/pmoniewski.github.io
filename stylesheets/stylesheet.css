@@ -492,7 +492,7 @@ div.content-sidebar {
   float: right;
   position: absolute;
   left: 740px;
-  margin-top: 5px;
+  margin-top: 46px;
 }
 
 #main-content {
@@ -615,7 +615,21 @@ td {
 form {
   padding: 20px;
   background: #f2f2f2;
+}
 
+dl {
+  display: grid;
+  grid-template-columns: 100px auto;
+  margin: 0;
+}
+
+dt {
+  grid-column-start: 1;
+}
+
+dd {
+  grid-column-start: 2;
+  margin-left: 4px;
 }
 
 /* GENERAL ELEMENT TYPE STYLES */
@@ -746,11 +760,6 @@ ul {
 ol {
   list-style: decimal inside;
   padding-left: 3px;
-}
-
-dl dd {
-  font-style: italic;
-  font-weight: 100;
 }
 
 footer {
